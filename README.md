@@ -14,7 +14,7 @@ This is the repository for Sakshi's personal webpage. The webpage is designed to
 
 ## About
 
-Sakshi is a dedicated and ambitious computer science student with a strong academic foundation and a passion for C/C++, DSA, HTML & CSS, and PHP. This webpage is created to highlight her projects, skills, and provide a way for potential collaborators or employers to contact her.
+I am a dedicated and ambitious computer science student with a strong academic foundation and a passion for C/C++, DSA, HTML & CSS, and PHP. This webpage is created to highlight my projects, skills, and provide a way for potential collaborators or employers to contact me.
 
 ## Features
 
@@ -28,12 +28,12 @@ To run this webpage locally, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/Sakshi-260204/Personal-Portfolio.git
     ```
 
 2. Navigate to the project directory:
     ```sh
-    cd your-repo-name
+    cd your-Personal-Portfolio
     ```
 
 3. Open the `index.html` file in your preferred web browser.
