@@ -4,134 +4,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="stylesheet.css">
-    
-    <title>Portfolio</title>
+    <title>Sakshi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-<!------------------------- HEADER & NAVIGATION BAR SECTION ---------------------->
-    <header class="header">
-        <a href="" class="logo">Portfolio</a>
-
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="#Home" class="active"> Home </a>
-            <a href="#about"> About </a>
-            <a href="#education"> Education </a>
-            <a href="#skills"> Skills </a>
-            <a href="#contact">Contact</a>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776; <!-- Hamburger icon -->
+            </div>
+            <ul id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
         </nav>
     </header>
 
-<!----------------------------------- HOME SECTION ----------------------->
-    <section class="Home" id="Home">
-        <div class="home-content">
-            <h3>Hi, My Name is </h3>
-            <h1>Sakshi Bansal</h1>
-            <h3>And <span> I am student</span>,</h3>
-            <p>currently pursuing my Graduation in Bachelor of Computer Application from Guru Gobind Singh Indraprastha University, New Delhi India</p>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro">
+            <h1>Hi, I'm <span class="name"> Sakshi Bansal </span></h1>
+            <p>Student at Guru Gobind Singh Indraprastha University (GGSIPU)</p>
+            <a href="#projects" class="btn">See My Projects</a>
+            <a href="Sakshi_Resume.pdf" class="btn download-btn" download>Download Resume</a>
+        </div>
+    </section>
 
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/sakshi-bansal-90872b246/"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/Sakshi-260204"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/sakshi.bansal.04/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>I am dedicated and ambitious computer science student with academic foundation and 
+            passion for C/C++, DSA, HTML & CSS, and PHP. I am looking forward to contributing my 
+            energy and fresh perspectives to the dynamic team. And excited to apply my classroom 
+            learning and skills to real world challenges and gain practical experience in the field of 
+            technology. Committed to continuous learning and achieving professional growth. </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Programming Languages</h3>
+                <p>C, C++, Java, Python</p>
             </div>
-            <a href="Sakshi_Resume.pdf" class="btn">Download Resume</a>
-        </div>   
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, PHP</p>
+            </div>
+            <div class="skill">
+                <h3>Data Analytics</h3>
+                <p>Pandas, Matplotlib, Seaborn, NumPy, Sweetviz and MS Excel</p>
+            </div>
+            <div class="skill">
+                <h3>Database Management</h3>
+                <p>SQL</p>
+            </div>
+            <div class="skill">
+                <h3>Tools & Technologies</h3>
+                <p>Git, GitHub, MongoDB</p>
+            </div>
+            <div class="skill">
+                <h3>Soft Skills</h3>
+                <p>Leadership, Teamwork, Communication</p>
+            </div>
+        </div>
     </section>
 
-
-<!----------------------------- ABOUT SECTION -------------------------->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="my image.jpg">
-        </div>
-
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <p>I am dedicated and ambitious computer science student with academic foundation and passion for C/C++, DSA, HTML & CSS, and PHP. I am looking forward to contributing my energy and fresh perspectives to the dynamic team. And excited to apply my classroom learning and skills to real world challenges and gain practical experience in the field of technology. Committed to continuous learning and achieving professional growth.</p>
-        </div>
-    </section>
-
-
-<!------------------------- EDUCATION SECTION ------------------------>
-    <section class="education" id="education">
-        <h2 class="heading"> My <span> Education </span></h2>
-
-        <!--GRADUATION -->
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
         <div class="education-container">
-            <div class="education-box">
-                <i class="fa-solid fa-building-columns"></i>
-                <h3>Guru Gobind Singh Indraprastha University</h3>
-                <p>Bachelor in Computer Application <br> 2022 - 2025 </p>
-            </div>
-        <!--INTERMEDIATE-->
-            <div class="education-box">
-                <i class="fa-solid fa-school"></i>
-                <h3>Govt. Girls Senior Secondary School</h3>
-                <p>Intermediate <br> 2021 - 2022 </p>
-            </div>
-        <!--METRICULATION-->
-            <div class="education-box">
-                <i class="fa-solid fa-school"></i>
-                <h3>National Institute of Open Learning</h3>
-                <p>Metriculation <br> 2020 - 2021 </p>
+            <div class="education">
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p>Guru Gobind Singh Indraprastha University, 2025</p>
+                <p>Key subjects: Data Structures, Algorithms, Database Management, Programming Languages, Computer
+                    Networks, Data Science, Operating System etc.</p>
             </div>
         </div>
     </section>
 
-<!------------------------------------ SKILLS SECTION PAGE --------------------------->
-<h2 class="heading"> My <span> Skills </span></h2>
-<section class="skills">
-    <div id="skills">
-
-        <li><h3 class="web"> Web Development: - </h3> <h4 class="web-l"> HTML, CSS, PHP, Java Script</h4></li>
-        <li><h3 class="PL">Programming Languages: -</h3><h4 class="PL-l">C, C++, Java, Python</h4></li>
-        <li><h3 class="Tools">Tools: - </h3><h4 class="Tools-l">Git, Git Hub, MongoDB, VS Code</h4></li>
-        <li><h3 class="Work">Fundamentals: -</h3><h4 class="Work-l">Data Structures, Algorithms, Object Oriented Programming (OOPs), Data Base Management System (DBMS), Operating System.</h4></li>
-    </div>
-</section>
-
-
-<!-- -----------------------------------Contact Section -------------------------->
-<!-- section class="Contact" id="contact">
-    <h2 class="heading"> Contact <span>Me</span></h2>
-
-    <form action=""> 
-
-        <div class="input-box">
-            <input type="text" placeholder=" Full Name ">
-            <input type="email" placeholder="Email ID">
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-container">
+            <div class="experience">
+                <h3><a href="DA_Certificate.pdf"> Data Analytics Summer Intern </a> </h3>
+                <p><strong>IBM <br> 24 June 2024 - 5 August 2024 </strong> <br> - Six-week internship focusing on air quality index analysis in India.</p>
+                <p>- Led a team of 4 members and used Python libraries for data analysis.</p>
+            </div>
+            <!--<div class="experience">
+                <h3>Product Intern</h3>
+                <p><strong>AcadAlly</strong> - Prepared for an interview for this role, gaining insights into product management and development.</p>
+            </div>
+            <div class="experience">
+                <h3>Social Media Marketing Intern</h3>
+                <p><strong>Adda 247</strong> - Applied for an internship focusing on social media marketing strategies.</p>
+            </div>
+            <div class="experience">
+                <h3>Digital Marketing Intern</h3>
+                <p><strong>Lee Way Global</strong> - Applied for an internship focusing on digital marketing strategies.</p>
+            </div> -->
         </div>
+    </section>
 
-        <div class="input-box">
-            <input type="text" placeholder="Mobile Number">
-            <input type="text" placeholder="Subject">
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <h3>Code Learn: A Java App</h3>
+                <p>- Developed a Java application named Code Quest to teach fundamental programming concepts.</p>
+                <p>- Implemented educational features to cover topics such as variables, loops, and conditional statements.</p>
+                <a href="https://github.com/Sakshi-260204/Code_Learn/tree/main" target="_blank">- View Project Code</a>
+            </div>
+            <div class="project">
+                <h3>Air Quality Index Analysis</h3>
+                <p>- Analyzed air quality in India using Python libraries: Pandas, NumPy, and Matplotlib.</p>
+                <p>- Created a visualized report with Sweetviz to provide insights and summaries of the data.</p>
+                <a href="https://github.com/Sakshi-260204/AQI_Analysis/blob/main/Data%20Analytics%20Project.ipynb" target="_blank">- View Analysis</a>
+            </div>
+            <div class="project">
+                <h3> <a href="https://sakshi-260204.github.io/Personal-Portfolio/">Portfolio Website </a></h3>
+                <p>- The website you are currently viewing, built with HTML and CSS.</p>
+                <p>- Showcases sections including education, experience, projects, skills, and contact information.</p>
+                <a href="https://github.com/Sakshi-260204/Personal-Portfolio" target="_blank">- View Project Code</a>
+            </div>
         </div>
+    </section>
 
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-    </form>
-</section>   --->
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:sakshi260204@gmail.com">sakshi260204@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918595652940">+91 8595652940</a></p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/sakshi-bansal-90872b246/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Sakshi-260204" target="_blank">GitHub</a>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sakshi. All Rights Reserved.</p>
+    </footer>
 
-<section class="all-contact">
-    <h2 class="contact"><u>Contact Me</u></h2>
-    <h2 class="Mobile"> Phone: +91 8595652940 </h2>
-    <h2 class="email"> Email: <a href="mailto:sakshi260204@gmail.com"> <span>sakshi260204@gmail.com</a> </span></h2>
-    <h2 class="linkedin">Linkedin: <a href="https://www.linkedin.com/in/sakshi-bansal-90872b246/"> <span>Sakshi Bansal</span></a></h2>
-</section>
-
-<footer>
-    <p>&copy; 2024 Sakshi. All rights reserved.</p>
-</footer>
-
-
-<script src="main.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
 </body>
 
 </html>
