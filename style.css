@@ -1,0 +1,302 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.795);
+}
+
+/* HEADER SECTION */
+header {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+    color: #333;
+}
+
+header nav ul li a {
+    color:#f4f4f4;
+    text-decoration:solid;
+    font-size: 1.5rem;
+    
+}
+
+header nav ul li a:hover {
+    color:cyan;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* HOME SECTION */
+#home {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home .intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color:#fff;
+}
+#home .intro p{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.name {
+    color: aqua;
+}
+
+#home .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: lightskyblue;
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+}
+#home .btn:hover{
+    color: blue;
+}
+
+
+/* ABOUT SECTION */
+#about h1{
+    color: cyan;
+    text-align: center;
+    font-size: 3rem;
+}
+#about p{
+    font-size: 1.5rem;
+    color:ghostwhite;
+}
+
+/* Skills Section */
+
+#skills h2 {
+    color: cyan;
+    font-size: 3rem;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: black;
+}
+
+.skill {
+    background: skyblue;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Education*/
+
+#education h2{
+    color: cyan;
+    font-size: 3rem;
+}
+.education h3{
+    color: #f4f4f4;
+    font-size: 1.5rem;
+}
+.education p{
+    font-size: 1.2rem;
+    color: #f4f4f4;
+}
+
+/* Experience Section */
+#experience h2 {
+    color: cyan;
+    font-size: 3rem;
+}
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.experience {
+    background: lightskyblue;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.experience h3 a {
+    margin-top: 0;
+    color: black;
+}
+
+/* Projects Section */
+
+#projects h2{
+    color: cyan;
+    font-size: 3rem;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    background: lightskyblue;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project a {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #007BFF;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact h2{
+    color: cyan;
+    font-size: 2rem;
+}
+
+#contact p{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#contact a:hover{
+    color: #007BFF;
+}
+
+#contact .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+#contact .social-media a:hover {
+    color: #007BFF;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    /*position: absolute;*/
+    width: 100%;
+    bottom: 0;
+}
+
+/* General Styles */
+/* ... existing styles ... */
+
+/* Header Styles */
+header {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+/* Responsive Styles */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    #nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #333;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        padding: 0;
+        margin: 0;
+        z-index: 1000;
+    }
+
+    #nav-list li {
+        display: block;
+        margin: 0;
+    }
+
+    #nav-list li a {
+        padding: 15px;
+        display: block;
+        color: #fff;
+    }
+
+    #nav-list.active {
+        display: flex;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+
+    .skill, .experience, .project {
+        width: 100%;
+    }
+
+    #home .btn, #home .download-btn {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    #home .intro h1 {
+        font-size: 1.5em;
+    }
+}
